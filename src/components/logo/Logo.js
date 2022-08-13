@@ -2,9 +2,9 @@ import propTypes from 'prop-types';
 
 const Logo = ({logo,title}) => {
     return (
-        <div className='flex items-center'>
+        <div className='flex items-center mb-2 mt-2'>
             <img src={logo} alt='Virus' className='mr-3 h-6' />
-            <span className='self-center text-xl font-semibold whitespace-nowrap text-white'>
+            <span className='self-center sm:m-auto text-xl font-semibold whitespace-nowrap text-white'>
                 {title}
             </span>
         </div>
