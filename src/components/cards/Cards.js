@@ -3,7 +3,7 @@ const countryImage = 'https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1488000/
 
 const Cards = ({country, totalCase, totalRecovered, totalDeaths}) => {
     return (
-        <div className="max-w-xs rounded overflow-hidden shadow-md cursor-pointer hover:shadow-lg hover:scale-105 transition-all">
+        <div className="xl:max-w-xs sm:max-w-full rounded overflow-hidden shadow-md cursor-pointer xl:hover:shadow-lg xl:hover:scale-105 transition-all">
             <img className="w-full" src={countryImage} alt="Country" />
             <div className="px-6 py-4">
                 <div className="font-bold tet-xl mb-3">{country}</div>
