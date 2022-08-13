@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { API_TOKEN, API_URL } from "/Users/erdenaykaratas/Desktop/Project/corona-app/src/consts";
+import { API_TOKEN, API_URL } from "../api.js";
 
 const Continents = () => {
     const [header] = useState([
@@ -40,7 +40,7 @@ const Continents = () => {
         setLoading(true)
         const response=await axios.get(`${API_URL}continentData`,{
             headers:{
-                authorization:API_TOKEN
+                authorization : API_TOKEN
             }
         })
         setLoading(false)
@@ -52,7 +52,7 @@ const Continents = () => {
     return(
         <div className="flex flex-col">
             <div className="inline-block min-w-full">
-                <h1 className="text-2xl mb-4 font-bold text-gray-900">Korona Tablosu</h1>
+                <h1 className="xl:text-2xl sm:text-sm mb-4 font-bold text-gray-900">Korona Tablosu</h1>
                 <div className="overflow-hidden shadow-md">
                     {loading? <p>Loading...</p>:<table className="min-w-full">
                         <thead className="bg-gray-600">
