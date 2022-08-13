@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { API_TOKEN, API_URL } from "../../consts";
+import { API_TOKEN, API_URL } from "../api.js";
 import axios from "axios";
 import Cards from "../cards/Cards";
 
@@ -32,7 +32,7 @@ const Countries = () => {
                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-violet-600"/>
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid xl:grid-cols-4 md:grid-cols-4 gap-4">
                 {loading && <p className="mb-5">Yükleniyor ...</p>}
                 {data.map((item) => {
                     return (

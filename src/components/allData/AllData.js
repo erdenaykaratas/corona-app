@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { API_TOKEN, API_URL } from "../../consts";
+import { API_TOKEN, API_URL } from "../api.js";
 
 const AllData = () => {
     const [loading, setLoading] = useState(false)
@@ -24,9 +24,9 @@ const AllData = () => {
     return (
         <div className="flex flex-col items-center justify-center h-full">
             {loading ? <p>Yükleniyor...</p> : <>
-                <h1 className="text-6xl text-gray-900 mb-5">Toplam Vaka : {data?.totalCases}</h1>
-                <h1 className="text-6xl text-gray-800 mb-5">Toplam Ölüm : {data?.totalDeaths}</h1>
-                <h1 className="text-6xl text-gray-700">Toplam İyileşme : {data?.totalRecovered}</h1>
+                <h1 className="xl:text-6xl sm:text-2xl text-gray-900 mb-5">Toplam Vaka : {data?.totalCases}</h1>
+                <h1 className="xl:text-6xl sm:text-2xl text-gray-800 mb-5">Toplam Ölüm : {data?.totalDeaths}</h1>
+                <h1 className="xl:text-6xl sm:text-2xl text-gray-700">Toplam İyileşme : {data?.totalRecovered}</h1>
             </>
             }
         </div>
