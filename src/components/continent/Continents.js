@@ -83,7 +83,7 @@ const Continents = () => {
                         </tbody>
                     </table>}
                 </div>
-                <h1 className="text-xs md:opacity-0">Tablonun tamamını görmek için kaydırabilirsiniz.</h1>
+                <h1 className="text-sm md:opacity-0">Tablonun tamamını görmek için kaydırabilirsiniz.</h1>
             </div>
         </div>
     )
