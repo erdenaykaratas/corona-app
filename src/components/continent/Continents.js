@@ -52,8 +52,8 @@ const Continents = () => {
     return(
         <div className="flex flex-col">
             <div className="inline-block min-w-full">
-                <h1 className="xl:text-2xl sm:text-sm mb-4 font-bold text-gray-900">Korona Tablosu</h1>
-                <div className="overflow-hidden shadow-md">
+                <h1 className="xl:text-3xl sm:text-sm mb-8 font-bold text-gray-900">Korona Tablosu</h1>
+                <div className="overflow-scroll shadow-md">
                     {loading? <p>Loading...</p>:<table className="min-w-full">
                         <thead className="bg-gray-600">
                                     <tr>
@@ -83,6 +83,7 @@ const Continents = () => {
                         </tbody>
                     </table>}
                 </div>
+                <h1 className="text-xs md:opacity-0">Tablonun tamamını görmek için kaydırabilirsiniz.</h1>
             </div>
         </div>
     )
